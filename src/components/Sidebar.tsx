@@ -2,7 +2,7 @@
 import SocialNetworks from "./SocialNetworks";
 import InformationContainer from "./InformationContainer";
 import React from "react";
-
+import Curriculo from "../itens/Currículo_Vitor.pdf"
 import Avatar from "../img/Vitor2.jpeg";
 import "../styles/components/sidebar.sass"
 
@@ -15,7 +15,7 @@ const Sidebar: React.FC  = () => {
       <p className="title">Desenvolvedor</p>
       <SocialNetworks/>
       <InformationContainer/>
-      <a href="" className="btn">Download Curriculo</a>
+      <a href={Curriculo} className="btn">Download Curriculo</a>
     </aside>
   );
 };
