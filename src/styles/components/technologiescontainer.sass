@@ -1,0 +1,85 @@
+@use '../variables'
+@use '../mixins'
+
+#technologies-container
+  margin-bottom: 1rem
+
+  .technologies-grid
+    display: flex
+    flex-wrap: wrap
+    gap: 1.5rem
+
+    .technology-card
+      @include mixins.center
+      gap: 1rem
+      padding: 1rem
+      border: 1px solid #333
+      width: 45%
+      border-radius: variables.$card-border-radius
+      &:hover
+          transform: scale(1.03)
+      
+      @media (max-width: 500px)
+        width: 100%
+    
+    
+
+      h3
+        color: variables.$text-color-primary
+        margin-bottom: 1rem
+      
+      svg
+        font-size: 6rem
+        min-width: 3rem
+        &:hover
+          animation: rotateAnimation 2s infinite
+
+    #html5
+      color: #e34f26
+    
+    #css3
+      color: #2965f1
+
+    #javascript
+      color: #f7df1e
+
+    #typescript
+      color: #007acc
+    
+    #react
+      color: #61dafb
+    
+    #sass
+      color: #c69
+
+    #mysql
+      color: #00758f
+
+    #nodejs
+      color: #3c873a
+    
+    #ruby
+      color: #cc342d
+
+    #postgresql
+      color: #336791
+
+    #docker
+      color: #0db7ed
+
+    #n8n
+      color: #32c9c9
+
+    
+    
+@keyframes rotateAnimation
+  0%
+    transform: rotate(0deg)
+  25%
+    transform: rotate(2deg)
+  50%
+    transform: rotate(-2deg)
+  75%
+    transform: rotate(2deg)
+  100%
+    transform: rotate(-2deg)
