@@ -35,14 +35,24 @@
       width: 2rem
       height: 2rem
       border-radius: variables.$card-border-radius
+      &:hover
+        @include mixins.animation-upscale
+        background: variables.$gradient
+        
 
     #phone-icon
-      color: #28a575a8
+      color: #3ec591
+      &:hover
+        color: variables.$text-color-primary
     
     #email-icon
-      color: #52528b
+      color: #6e6eaf
+      &:hover
+        color: variables.$text-color-primary
 
     #pin-icon
-      color: #852525
+      color: #f06363
+      &:hover
+        color: variables.$text-color-primary
 
   

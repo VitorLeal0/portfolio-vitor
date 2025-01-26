@@ -14,7 +14,7 @@
   border-radius: 3rem 
   &:hover
     transform: scale(1.05)
-    transition: transform .3s
+    transition: transform .5s
     // background: variables.$bg-color-secondary
     background: variables.$gradient-hover
   
@@ -23,3 +23,9 @@
   background: variables.$gradient
   height: 3px
   width: 30%
+
+@mixin animation-upscale
+    transform: scale(1.15)
+    transition: transform .5s
+    // background: variables.$bg-color-secondary
+    
