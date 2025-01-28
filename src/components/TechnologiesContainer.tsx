@@ -14,55 +14,68 @@ import '../styles/components/technologiescontainer.sass'
 import { SiN8N } from "react-icons/si";
 
 const technologies = [
-  {
-    id: 'html5',
-    name: 'HTML5',
-    icon: <DiHtml5 />
-  },
-  {
-    id: 'css3',
-    name: 'CSS3',
-    icon: <DiCss3 />
-  },
+
   {
     id: 'javascript',
     name: 'JavaScript',
-    icon: <BiLogoJavascript />
+    icon: <BiLogoJavascript />,
+    description:"Desenvolvimento de projetos frontend pessoais e profissionais"
   },
   {
     id:'typescript',
     name: 'TypeScript',
-    icon: <BiLogoTypescript />
+    icon: <BiLogoTypescript />,
+    description:"Desenvolvimento de projetos frontend pessoais e profissionais"
+  },
+
+  {
+    id: 'html5',
+    name: 'HTML5',
+    icon: <DiHtml5 />,
+    description:"Desenvolvimento de componentes para aplicaçoes frontend"
+  },
+  {
+    id: 'css3',
+    name: 'CSS3',
+    icon: <DiCss3 />,
+    description:"Estilização de compontentes em aplicaçoes frontend responsivas"
   },
   {
     id: 'react',
     name: 'React',
-    icon: <DiReact />
-  },
-  {
-    id: 'nodejs',
-    name: 'Node.JS',
-    icon: <DiNodejsSmall />
+    icon: <DiReact />,
+    description:"Desenvolvimento de projetos frontend pessoais e profissionais utilizando Styled Components e SASS"
   },
   {
     id: 'ruby',
     name: 'Ruby',
-    icon: <DiRuby />
+    icon: <DiRuby />,
+    description:"Desenvovimento de pequenas soluçoes em software, correções de bugs em backend"
   },
+  {
+    id: 'nodejs',
+    name: 'Node.JS',
+    icon: <DiNodejsSmall />,
+    description:"Desenvolimento de pequenas APIs para servir o frontend alem de algumas operaçoes de baixa complexidade"
+  },
+
   {
     id: 'mysql',
     name: 'MySQL',
-    icon: <DiMysql />
+    icon: <DiMysql />,
+    description:"Criação e manipulação de dados em softwares ERP"
   },
   {
     id: 'postgresql',
     name: 'PostgreSQL',
-    icon: <DiPostgresql />
+    icon: <DiPostgresql />,
+    description:" Utilização de BD em docker para aplicações web"
   },
   {
     id: 'n8n',
     name: 'N8N',
-    icon: <SiN8N />
+    icon: <SiN8N />,
+    description:"Automações de processos entre diferentes plataformas por meio de API, Cron ou disparo de gatilhos"
   },
 ]
 
@@ -76,9 +89,8 @@ const TechnologiesContainer: React.FC = () => {
             {tech.icon}
             <div className="tecnology-info"> 
               <h3>{tech.name}</h3>
-              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <p>{tech.description}</p>
             </div>
-            
           </div>
         ))}
       </div>

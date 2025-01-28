@@ -12,7 +12,7 @@ const Sidebar: React.FC  = () => {
   return (
     <aside id="sidebar">
       <img src={Avatar} alt="Vitor Leal" />
-      <p className="title">Desenvolvedor</p>
+      <p className="title">Desenvolvedor<span className="curiertext">|</span></p>
       <SocialNetworks/>
       <InformationContainer/>
       <a href={Curriculo} className="btn">Download Curriculo</a>

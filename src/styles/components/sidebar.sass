@@ -24,6 +24,17 @@
     border-radius: variables.$card-border-radius
     margin-top: 12rem
     padding: .8rem 1.2rem
+
+    .curiertext
+      transition: .1s
+      animation: piscando 1s infinite
+      
   
   .btn
     @include mixins.btn
+
+@keyframes piscando
+  0%,100% 
+    opacity: 1
+  50%
+    opacity: 0
