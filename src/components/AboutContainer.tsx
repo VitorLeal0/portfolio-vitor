@@ -3,7 +3,7 @@ import React from 'react'
 const AboutContainer: React.FC = () => {
   return (
     <section id="about-container">
-      <h2>Sobre mim</h2>
+      <h2>Sobre</h2>
       <p>Sou um engenheiro de software com mais de nove anos de experiência na area de tecnologia, como desenvolvedor e suporte técnico, especialmente com Ruby on rails, Javascript , React.js, HTML, CSS.</p>
       <p> Trabalhei na RD Station, uma empresa líder em marketing digital na América Latina, onde contribuí para a criação de plataformas e ferramentas que ajudam os clientes a gerar mais resultados online.</p>
       <p> Antes disso, trabalhei na Sfhera Software e na O Guia da Cidade, onde desenvolvi e suportei sistemas ERP para diversos segmentos e necessidades.</p>
